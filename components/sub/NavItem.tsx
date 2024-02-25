@@ -1,5 +1,6 @@
+import { NavItemProps } from "@/types";
 import { Typography } from "@material-tailwind/react";
-import { NavItemProps } from "../../../types";
+
 
 function NavItem({ children, href }: NavItemProps) {
   return (
