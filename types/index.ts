@@ -26,6 +26,7 @@ export interface ShufflerProps {
 }
 
 export interface LinesProps {
-  whiteText: boolean
-  hideLG: boolean
+  whiteText?: boolean
+  hideLG?: boolean
+  hideText?: boolean
 }

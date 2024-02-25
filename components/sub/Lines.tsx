@@ -1,8 +1,8 @@
 import { Typography } from "@material-tailwind/react";
 import React from "react";
-import { LinesProps } from "../../../types";
+import { LinesProps } from "@/types";
 
-function Lines({whiteText, hideLG}: LinesProps) {
+function Lines({ whiteText, hideLG, hideText }: LinesProps) {
   return (
     <div>
       <div>
@@ -11,16 +11,24 @@ function Lines({whiteText, hideLG}: LinesProps) {
         <div className="w-full min-h-1 bg-white" />
         <div className="w-full min-h-1 bg-[#ac8c3c]" />
       </div>
-      <div className="flex justify-between align-center">
-        <Typography placeholder="" color={whiteText ? 'white' : 'black'} className={`lg:text-lg ${hideLG ? 'lg:hidden' : ''}`}>
-          
-          &copy; 2024
-        </Typography>
-        <Typography placeholder="" color={whiteText ? 'white' : 'black'} className={`lg:text-lg ${hideLG ? 'lg:hidden' : ''}`} >
-          
-          Expertise in your gas needs
-        </Typography>
-      </div>
+      {!hideText && (
+        <div className="flex justify-between align-center">
+          <Typography
+            placeholder=""
+            color={whiteText ? "white" : "black"}
+            className={`lg:text-lg ${hideLG ? "lg:hidden" : ""}`}
+          >
+            &copy; 2024
+          </Typography>
+          <Typography
+            placeholder=""
+            color={whiteText ? "white" : "black"}
+            className={`lg:text-lg ${hideLG ? "lg:hidden" : ""}`}
+          >
+            Expertise in your gas needs
+          </Typography>
+        </div>
+      )}
     </div>
   );
 }
