@@ -10,7 +10,7 @@ import {
 } from "@material-tailwind/react";
 import Image from "next/image";
 import LogoCompany from "@/assets/LogoOAT.png";
-import LogoDistributor from "@/assets/Authorised-distributor-horizontal-logo-English - Original.png";
+import LogoDistributor from "@/assets/Authorised-distributor-horizontal-logo-English-Original.png";
 import { NAV_MENU } from "@/constants";
 import NavItem from "./sub/NavItem";
 
