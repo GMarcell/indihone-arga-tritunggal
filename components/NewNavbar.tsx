@@ -14,7 +14,7 @@ import LogoDistributor from "@/assets/Authorised-distributor-horizontal-logo-Eng
 import { NAV_MENU } from "@/constants";
 import NavItem from "./sub/NavItem";
 
-export function NewNavbar() {
+export default function NewNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
