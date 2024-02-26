@@ -14,8 +14,10 @@ import Image from "next/image";
 import LogoCompany from "@/assets/LogoOAT.png";
 import LogoDistributor from "@/assets/Authorised-distributor-horizontal-logo-English - Original.png";
 import { NAV_MENU } from "@/constants";
+import { useRouter } from "next/router";
 
 export function Navbar() {
+  const router = useRouter()
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => setOpen((cur) => !cur);
@@ -36,7 +38,7 @@ export function Navbar() {
       // color="transparent"
     >
       <div className="container mx-auto flex items-center justify-between">
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center justify-center gap-2" onClick={() => router.push('/')}>
           <Image src={LogoCompany} alt="Logo" width={100}/>
           <Image src={LogoDistributor} alt="Logo" width={120} />
         </div>
