@@ -9,7 +9,7 @@ function NavItem({ children, href }: NavItemProps) {
         placeholder=""
         as="a"
         href={href || "#"}
-        target={href?.includes("#") ? "_self" : "_blank"}
+        // target={href?.includes("#") ? "_self" : ""}
         variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"

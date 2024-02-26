@@ -65,7 +65,7 @@ export function Footer() {
                 placeholder=""
                 onClick={() =>
                   window.open(
-                    "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=grand1310marcell@gmail.com",
+                    "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=ales.helpdesk@id-oat.com",
                     "_blank"
                   )
                 }

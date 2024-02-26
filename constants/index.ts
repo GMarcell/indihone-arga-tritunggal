@@ -5,6 +5,7 @@ import {
   CubeIcon,
   EyeIcon,
   LockClosedIcon,
+  ServerStackIcon,
   UserCircleIcon,
   UsersIcon,
 } from "@heroicons/react/24/solid";
@@ -14,42 +15,42 @@ export const NAV_MENU = [
   {
     name: "Tentang Kami",
     icon: BuildingOffice2Icon,
-    href: "/#about-us",
+    href: "/",
   },
+  // {
+  //   name: "Vision & Mision",
+  //   icon: EyeIcon,
+  //   href: "/#vision-mision",
+  // },
+  // {
+  //   name: "Core Values",
+  //   icon: CircleStackIcon,
+  //   href: "/#core-values",
+  // },
   {
-    name: "Vision & Mision",
-    icon: EyeIcon,
-    href: "/#vision-mision",
-  },
-  {
-    name: "Core Values",
-    icon: CircleStackIcon,
-    href: "/#core-values",
+    name: "Service",
+    icon: ServerStackIcon,
+    href: "/service",
   },
   // {
   //   name: "Authorization",
   //   icon: LockClosedIcon,
   //   href: "/#authorization",
   // },
-  {
-    name: "Clients",
-    icon: UsersIcon,
-    href: "#clients",
-  },
   // {
-  //   name: "Products",
-  //   icon: CubeIcon,
-  //   href: "#products",
-  // },
-  // {
-  //   name: "FAQ",
+  //   name: "Way We Do",
   //   icon: ChatBubbleBottomCenterTextIcon,
   //   href: "#faqs",
   // },
   {
+    name: "Clients",
+    icon: UsersIcon,
+    href: "/clients",
+  },
+  {
     name: "Contacts",
     icon: UserCircleIcon,
-    href: "#contacts",
+    href: "/contacts",
   },
 ];
 
