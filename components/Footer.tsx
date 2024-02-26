@@ -22,14 +22,21 @@ export function Footer() {
               color="white"
               className="mb-4"
             >
-              Indihone Arga Tritunggal
+              Ondihone Arga Tritunggal
             </Typography>
             <Typography
               color="white"
               className="mb-4 font-normal"
               placeholder=""
             >
-              indihone_arga-tritunggal@mail.com
+              ales.helpdesk@id-oat.com
+            </Typography>
+            <Typography
+              color="white"
+              className="mb-4 font-normal"
+              placeholder=""
+            >
+              operation.helpdesk@id-oat.com
             </Typography>
             <Typography
               color="white"

@@ -7,7 +7,7 @@ import NewNavbar from "@/components/NewNavbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Indihone Arga Tritunggal",
+  title: "Ondihone Arga Tritunggal",
   description: "Official Distributor of Atlas copco",
 };
 
