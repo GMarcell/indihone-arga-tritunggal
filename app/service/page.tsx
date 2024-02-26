@@ -6,7 +6,7 @@ import ProjectCard from "@/components/ProjectCard";
 import Authorization from "../authorization/page";
 import WayWeDo from "../way-we-do/page";
 
-export function Service() {
+export default function Service() {
   return (
     <>
     <Authorization/>
@@ -41,5 +41,3 @@ export function Service() {
     </>
   );
 }
-
-export default Service;

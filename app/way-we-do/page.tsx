@@ -5,7 +5,7 @@ import Image from "next/image";
 import SMS from '@/assets/SMS.png'
 import QMS from '@/assets/QMS.png'
 
-export function WayWeDo() {
+export default function WayWeDo() {
   return (
     <section className="py-28 px-8 bg-[url('/image/WayWeDo.png')] bg-cover" id="products">
       <div className="container mx-auto mb-10 text-center">
@@ -25,5 +25,3 @@ export function WayWeDo() {
     </section>
   );
 }
-
-export default WayWeDo;

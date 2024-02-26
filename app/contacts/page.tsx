@@ -13,7 +13,7 @@ import Image from "next/image";
 import ContactImage from "@/assets/ContactUs.png";
 import { FaRegBuilding } from "react-icons/fa";
 
-export function Contacts() {
+export default function Contacts() {
   return (
     <section
       className="px-8 py-16 bg-gray-200 min-h-[60vh] flex justify-center items-center"
@@ -88,5 +88,3 @@ export function Contacts() {
     </section>
   );
 }
-
-export default Contacts;

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 import { CLIENTSName } from "@/constants";
 
-export function Clients() {
+export default function Clients() {
   return (
     <section className="px-8 py-28" id="clients">
       <div className="container mx-auto text-center">
@@ -32,5 +32,3 @@ export function Clients() {
     </section>
   );
 }
-
-export default Clients;
