@@ -20,69 +20,110 @@ export default function Contacts() {
       id="contacts"
     >
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-10 md:grid-cols-2">
-        <div className='my-auto'>
-          <Typography variant="h3" placeholder="" className='!leading-tight text-4xl md:text-6xl text-[#1C3A96] font-bold'>
+        <div className="my-auto">
+          <Typography
+            variant="h3"
+            placeholder=""
+            className="!leading-tight text-3xl md:text-5xl text-[#1C3A96] font-bold"
+          >
             Let&apos;s Connect With Us!
           </Typography>
-          <Typography variant="h4" placeholder="" className='!leading-tight text-2xl md:text-3xl text-[#1C3A96] font-bold'>
+          <Typography
+            variant="h4"
+            placeholder=""
+            className="!leading-tight text-xl md:text-2xl text-[#1C3A96] font-bold"
+          >
             For Inquiry and Discussion :
           </Typography>
-          <List placeholder="" className='mt-5'>
-            <ListItem placeholder="" className='flex items-center gap-4'>
-              <ListItemPrefix placeholder="">
-                <IoCall size={28}/>
+          <List placeholder="" className="mt-5">
+            <ListItem placeholder="" className="flex justify-between">
+              <ListItemPrefix placeholder="" className="w-1/5">
+                <div className="flex justify-center flex-col items-center">
+                  <FaRegBuilding size={28} color="black" />
+                  <Typography placeholder="" color="black">
+                    Main
+                  </Typography>
+                </div>
               </ListItemPrefix>
-              <Typography placeholder="" className='text-xl'>+62 21 352 90 119</Typography>
+              <div className="w-full">
+                <Typography placeholder="" color="black">
+                  18 Office Park 21st Floor.
+                </Typography>
+                <Typography placeholder="" color="black">
+                  Jl. TB Simatupang No.18, Jakarta Selatan
+                </Typography>
+                <Typography placeholder="" color="black">
+                  DKI Jakarta - 12520
+                </Typography>
+              </div>
             </ListItem>
-            <ListItem placeholder="" className='flex items-center gap-4'>
-              <ListItemPrefix placeholder="">
-                <IoMdMail size={28}/>
+            <ListItem placeholder="" className="flex justify-between">
+              <ListItemPrefix placeholder="" className="w-1/5">
+                <div className="flex justify-center flex-col items-center">
+                  <FaRegBuilding size={28} color="black" />
+                  <Typography placeholder="" color="black">
+                    Operation
+                  </Typography>
+                </div>
               </ListItemPrefix>
-              <div>
-                <Typography placeholder="" className='text-xl'>ales.helpdesk@id-oat.com</Typography>
-                <Typography placeholder="" className='text-xl'>
+              <div className="w-full">
+                <Typography placeholder="" color="black">
+                  Jl. Melati XI. No.41
+                </Typography>
+                <Typography placeholder="" color="black">
+                  (Buaran Indah Toll Gate Circle Road)
+                </Typography>
+                <Typography placeholder="" color="black">
+                  Tanah Tinggi, Kota Tangerang - 15119
+                </Typography>
+              </div>
+            </ListItem>
+            <ListItem placeholder="" className="flex justify-between">
+              <ListItemPrefix
+                placeholder=""
+                className="w-1/5 flex justify-center"
+              >
+                <IoCall size={28} color="black" />
+              </ListItemPrefix>
+              <div className="w-full">
+                <Typography placeholder="" className="text-xl" color="black">
+                  +62 21 352 90 119
+                </Typography>
+              </div>
+            </ListItem>
+            <ListItem placeholder="" className="flex justify-between">
+              <ListItemPrefix
+                placeholder=""
+                className="w-1/5 flex justify-center"
+              >
+                <IoMdMail size={28} color="black" />
+              </ListItemPrefix>
+              <div className="w-full">
+                <Typography placeholder="" className="text-xl" color="black">
+                  sales.helpdesk@id-oat.com
+                </Typography>
+                <Typography placeholder="" className="text-xl" color="black">
                   operation.helpdesk@id-oat.com
                 </Typography>
               </div>
             </ListItem>
-            <ListItem placeholder="" className='flex items-center gap-4'>
-              <ListItemPrefix placeholder="">
-                <BsBrowserEdge size={28}/>
+            <ListItem placeholder="" className="flex justify-between">
+              <ListItemPrefix
+                placeholder=""
+                className="w-1/5 flex justify-center"
+              >
+                <BsBrowserEdge size={28} color="black" />
               </ListItemPrefix>
-              <Typography placeholder="" className='text-xl'>www.id-oat.com</Typography>
+              <div className="w-full">
+                <Typography placeholder="" className="text-xl" color="black">
+                  www.id-oat.com
+                </Typography>
+              </div>
             </ListItem>
           </List>
         </div>
-        <div>
+        <div className="flex justify-center items-center">
           <Image src={ContactImage} alt="" />
-          <List placeholder="">
-            <ListItem placeholder="" className='flex justify-between'>
-              <ListItemPrefix placeholder="" className='w-1/5'>
-                <div className="flex justify-center flex-col items-center">
-                  <FaRegBuilding size={28}/>
-                  <Typography placeholder="">Main</Typography>
-                </div>
-              </ListItemPrefix>
-              <div className="w-full">
-                <Typography placeholder=''>18 Office Park 21st Floor.</Typography>
-                <Typography placeholder=''>Jl. TB Simatupang No.18, Jakarta Selatan</Typography>
-                <Typography placeholder=''>DKI Jakarta - 12520</Typography>
-              </div>
-            </ListItem>
-            <ListItem placeholder="" className='flex justify-between'>
-              <ListItemPrefix placeholder="" className='w-1/5'>
-                <div className="flex justify-center flex-col items-center">
-                  <FaRegBuilding size={28}/>
-                  <Typography placeholder="">Operation</Typography>
-                </div>
-              </ListItemPrefix>
-              <div className='w-full'>
-                <Typography placeholder=''>Jl. Melati XI. No.41</Typography>
-                <Typography placeholder=''>(Buaran Indah Toll Gate Circle Road)</Typography>
-                <Typography placeholder=''>Tanah Tinggi, Kota Tangerang - 15119</Typography>
-              </div>
-            </ListItem>
-          </List>
         </div>
       </div>
     </section>

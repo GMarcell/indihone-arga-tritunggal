@@ -4,9 +4,9 @@ import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 import { CLIENTSName } from "@/constants";
 
-export default function Clients() {
+export default function Customers() {
   return (
-    <section className="px-8 py-28" id="clients">
+    <section className="px-8 py-28 bg-gray-200" id="clients">
       <div className="container mx-auto text-center">
         <Typography
           variant="h2"
@@ -14,10 +14,10 @@ export default function Clients() {
           className="mb-8 !leading-tight text-4xl md:text-6xl text-center text-[#1C3A96] font-bold"
           placeholder=""
         >
-          My awesome clients
+          My Awesome Customer
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-6">
-          {CLIENTSName.map((logo, key) => (
+          {CLIENTSName.map((logo, key): any => (
             <Image
               key={key}
               alt={logo}

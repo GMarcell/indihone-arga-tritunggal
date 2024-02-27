@@ -5,6 +5,7 @@ import {
   CubeIcon,
   EyeIcon,
   LockClosedIcon,
+  NewspaperIcon,
   ServerStackIcon,
   UserCircleIcon,
   UsersIcon,
@@ -28,7 +29,7 @@ export const NAV_MENU = [
   //   href: "/#core-values",
   // },
   {
-    name: "Service",
+    name: "Services",
     icon: ServerStackIcon,
     href: "/service",
   },
@@ -43,9 +44,14 @@ export const NAV_MENU = [
   //   href: "#faqs",
   // },
   {
-    name: "Clients",
+    name: "News / Article",
+    icon: NewspaperIcon,
+    href: "/news-article",
+  },
+  {
+    name: "Customers",
     icon: UsersIcon,
-    href: "/clients",
+    href: "/customers",
   },
   {
     name: "Contacts",

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Typography, IconButton, Button } from "@material-tailwind/react";
-import {  NAV_MENU } from "@/constants";
+import { NAV_MENU } from "@/constants";
 import { useRouter } from "next/navigation";
 import { IoMdMail, IoLogoWhatsapp } from "react-icons/io";
 import { FaLinkedin, FaFacebook } from "react-icons/fa";
@@ -9,7 +9,7 @@ import { FaLinkedin, FaFacebook } from "react-icons/fa";
 export function Footer() {
   const router = useRouter();
   return (
-    <footer className="mt-10 bg-gray-900 px-8 pt-12" id="contacts">
+    <footer className="mt-10 bg-gray-900 px-8 pt-12 bottom-0" id="contacts">
       <div className="container mx-auto">
         <div className="flex flex-wrap justify-center gap-8 md:justify-between">
           <div className="text-center md:text-left">
@@ -22,14 +22,14 @@ export function Footer() {
               color="white"
               className="mb-4"
             >
-              Ondihone Arga Tritunggal
+              Ondihon Arga Tritunggal
             </Typography>
             <Typography
               color="white"
               className="mb-4 font-normal"
               placeholder=""
             >
-              ales.helpdesk@id-oat.com
+              sales.helpdesk@id-oat.com
             </Typography>
             <Typography
               color="white"
@@ -65,39 +65,39 @@ export function Footer() {
             >
               Contact Us
             </Typography>
-            <div className="flex gap-5 justify-center md:gap-2">
-              <IconButton
-                variant="text"
-                color="white"
-                placeholder=""
-                onClick={() =>
+            <div className="flex gap-5 justify-center">
+              <button className="btn btn-square btn-ghost" onClick={() =>
                   window.open(
-                    "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=ales.helpdesk@id-oat.com",
+                    "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=sales.helpdesk@id-oat.com; operation.helpdesk@id-oat.com",
                     "_blank"
                   )
-                }
-              >
-                <IoMdMail size={28}/>
-              </IconButton>
-              <IconButton
-                variant="text"
-                color="white"
-                placeholder=""
-                onClick={() => {
+                }>
+                <IoMdMail size={28} />
+              </button>
+              <button className="btn btn-square btn-ghost" onClick={() => {
                   window.open(
                     "https://wa.me/622135290 119?text=I'm%20interested%20in%20your%20product%20for%20sale",
                     "_blank"
                   );
-                }}
-              >
-                <IoLogoWhatsapp size={28}/>
-              </IconButton>
-              <IconButton variant="text" color="white" placeholder="">
-              <FaLinkedin size={28}/>
-              </IconButton>
-              <IconButton variant="text" color="white" placeholder="">
-              <FaFacebook size={28}/>
-              </IconButton>
+                }}>
+                <IoLogoWhatsapp size={28} />
+              </button>
+              <button className="btn btn-square btn-ghost" onClick={() => {
+                  window.open(
+                    "https://www.linkedin.com/company/pt-ondihon-arga-tritunggal/",
+                    "_blank"
+                  );
+                }}>
+                <FaLinkedin size={28} />
+              </button>
+              <button className="btn btn-square btn-ghost" onClick={() => {
+                  window.open(
+                    "",
+                    "_blank"
+                  );
+                }}>
+                <FaFacebook size={28} />
+              </button>
             </div>
           </div>
         </div>

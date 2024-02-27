@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from '../page'
 import Service from '../service/page'
-import Clients from '../clients/page'
+import Customers from '../customers/page'
 import Contacts from '../contacts/page'
 
 function SinglePageApp() {
@@ -9,7 +9,7 @@ function SinglePageApp() {
     <>
       <Home/>
       <Service/>
-      <Clients/>
+      <Customers/>
       <Contacts/>
     </>
   )

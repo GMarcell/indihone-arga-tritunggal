@@ -16,16 +16,16 @@ function Lines({ whiteText, hideLG, hideText }: LinesProps) {
           <Typography
             placeholder=""
             color={whiteText ? "white" : "black"}
-            className={`lg:text-lg ${hideLG ? "lg:hidden" : ""}`}
+            className={`lg:text-4xl ${hideLG ? "lg:hidden" : ""}`}
           >
-            &copy; 2024
+            Expertise in your gas needs
           </Typography>
           <Typography
             placeholder=""
             color={whiteText ? "white" : "black"}
             className={`lg:text-lg ${hideLG ? "lg:hidden" : ""}`}
           >
-            Expertise in your gas needs
+            &copy; 2024
           </Typography>
         </div>
       )}
