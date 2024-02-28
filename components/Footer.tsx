@@ -66,36 +66,48 @@ export function Footer() {
               Contact Us
             </Typography>
             <div className="flex gap-5 justify-center">
-              <button className="btn btn-square btn-ghost" onClick={() =>
+              <button
+                className="btn btn-square btn-ghost"
+                onClick={() =>
                   window.open(
                     "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=sales.helpdesk@id-oat.com; operation.helpdesk@id-oat.com",
                     "_blank"
                   )
-                }>
+                }
+              >
                 <IoMdMail size={28} />
               </button>
-              <button className="btn btn-square btn-ghost" onClick={() => {
+              <button
+                className="btn btn-square btn-ghost"
+                onClick={() => {
                   window.open(
-                    "https://wa.me/622135290 119?text=I'm%20interested%20in%20your%20product%20for%20sale",
+                    "https://wa.me/6282312073911?text=I'm%20interested%20in%20your%20product%20for%20sale",
                     "_blank"
                   );
-                }}>
+                }}
+              >
                 <IoLogoWhatsapp size={28} />
               </button>
-              <button className="btn btn-square btn-ghost" onClick={() => {
+              <button
+                className="btn btn-square btn-ghost"
+                onClick={() => {
                   window.open(
                     "https://www.linkedin.com/company/pt-ondihon-arga-tritunggal/",
                     "_blank"
                   );
-                }}>
+                }}
+              >
                 <FaLinkedin size={28} />
               </button>
-              <button className="btn btn-square btn-ghost" onClick={() => {
+              <button
+                className="btn btn-square btn-ghost"
+                onClick={() => {
                   window.open(
-                    "",
+                    "https://www.facebook.com/profile.php?id=61557078741473",
                     "_blank"
                   );
-                }}>
+                }}
+              >
                 <FaFacebook size={28} />
               </button>
             </div>
