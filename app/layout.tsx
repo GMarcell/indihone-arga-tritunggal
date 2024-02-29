@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/Footer";
-import NewNavbar from "@/components/NewNavbar";
-import { FloatingButton } from "@/components/FloatingButton";
+import LangController from "./LangController";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,11 +19,8 @@ export default function RootLayout({
     <html lang="en">
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className={inter.className}>
-        <NewNavbar/>
-        {children}
-        <Footer/>
-        <FloatingButton/>
-        </body>
+        <LangController>{children}</LangController>
+      </body>
     </html>
   );
 }

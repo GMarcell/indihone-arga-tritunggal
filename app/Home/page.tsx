@@ -2,8 +2,13 @@
 
 import { Typography } from "@material-tailwind/react";
 import Lines from "@/components/sub/Lines";
+import { ComplexNavbar } from "@/components/ComplexNavbar";
+import { useContext } from "react";
+import langContext from "@/hooks/langContext";
 
 function Home() {
+  const {language} = useContext(langContext)
+
   return (
     <>
       <header

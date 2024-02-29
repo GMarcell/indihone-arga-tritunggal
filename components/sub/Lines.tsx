@@ -1,8 +1,11 @@
 import { Typography } from "@material-tailwind/react";
-import React from "react";
 import { LinesProps } from "@/types";
+import React, { useContext } from "react";
+import langContext from "@/hooks/langContext";
+import { homeTagline } from "@/bilinggual/bilinggual";
 
 function Lines({ whiteText, hideLG, hideText }: LinesProps) {
+  const {language} = useContext(langContext)
   return (
     <div>
       <div>
@@ -18,7 +21,7 @@ function Lines({ whiteText, hideLG, hideText }: LinesProps) {
             color={whiteText ? "white" : "black"}
             className={`lg:text-4xl ${hideLG ? "lg:hidden" : ""}`}
           >
-            Expertise in your gas needs
+            {homeTagline[language as string]}
           </Typography>
           <Typography
             placeholder=""

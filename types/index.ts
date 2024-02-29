@@ -1,3 +1,5 @@
+import { Dispatch, ReactNode, SetStateAction } from "react";
+
 export interface NavItemProps {
   children: React.ReactNode;
   href?: string;
@@ -29,4 +31,13 @@ export interface LinesProps {
   whiteText?: boolean
   hideLG?: boolean
   hideText?: boolean
+}
+
+export interface LangControllerProps {
+  children: ReactNode
+}
+
+export interface LangHandlerProps {
+  lang: string
+  setLang: Dispatch<SetStateAction<string>>
 }

@@ -1,14 +1,16 @@
 "use client";
 
-import React from "react";
+import React, { useContext } from "react";
 import certificate from "@/assets/certificate.jpg";
-import ujiMutu from "@/assets/ujiMutu.png";
 import Image from "next/image";
 import {
   Typography,
 } from "@material-tailwind/react";
+import langContext from "@/hooks/langContext";
+import { Auth } from "@/bilinggual/bilinggual";
 
 function Authorization() {
+  const {language} = useContext(langContext)
   return (
     <div className="bg-[url('/image/Auth.png')] bg-cover" id='authorization'>
       <div className="container h-full min-h-[80vh] w-full flex items-center mx-auto py-auto">
@@ -20,15 +22,13 @@ function Authorization() {
                 className=" !leading-tight text-3xl md:text-5xl text-center text-[#1C3A96] font-bold"
                 variant="h2"
               >
-                Authorization
+                {Auth.title[language]}
               </Typography>
               <Typography
                 placeholder=""
                 className="lg:text-2xl text-center md:my-5 text-black"
               >
-                Since 2023, We are appointed as Authorized Distributor of Atlas
-                Copco Indonesia and committed as Company who strive for
-                excellence in quality and enhancing our people to grow.
+                {Auth.sentence[language]}
               </Typography>
             </div>
             <Image

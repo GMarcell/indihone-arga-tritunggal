@@ -2,8 +2,12 @@
 
 import { Button, Typography } from "@material-tailwind/react";
 import { PROJECTS, serviceConstans } from "../../constants";
+import React, { useContext } from "react";
+import langContext from "@/hooks/langContext";
+import { serviceWord } from "@/bilinggual/bilinggual";
 
 export default function Service() {
+  const {language} = useContext(langContext)
   return (
     <section className="p-8 bg-gray-200" id="service">
       <div className="container mx-auto mb-10 text-center ">
@@ -13,17 +17,14 @@ export default function Service() {
           className="mb-4 text-4xl md:text-6xl text-center text-[#1C3A96] font-bold"
           placeholder=""
         >
-          Our Service
+          {serviceWord.title[language]}
         </Typography>
         <Typography
           placeholder=""
           variant="lead"
           className="mx-auto w-full px-4 font-normal text-black"
         >
-          PT Ondihon Arga Tritunggal is committed to delivering holistic
-          solutions that go with Atlas Copco superior products. Our services are
-          tailored to meet the diverse needs of our clients, ensuring excellence
-          at every step.
+          {serviceWord.Subtitle[language]}
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20">
@@ -36,19 +37,16 @@ export default function Service() {
                   className="md:text-4xl text-2xl font-bold "
                   color="white"
                 >
-                  COMPRESSED AIR SYSTEM
+                  {serviceWord.service1Title[language]}
                 </Typography>
                 <Typography
                   placeholder=""
                   className="md:text-xl font-medium mt-5"
                   color="white"
                 >
-                  Leverage our advanced problem analytics services to gain
-                  valuable insights for having correct compressed air solution,
-                  promote efficiency campaign, and drive customer business
-                  growth.
+                  {serviceWord.service1Subtitle[language]}
                 </Typography>
-                <button className="btn btn-outline btn-warning mt-5">See Products</button>
+                <button className="btn btn-outline btn-warning mt-5">{ language == 'en' ? 'See Products' : 'Lihat Produk'}</button>
               </div>
             </div>
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -68,18 +66,16 @@ export default function Service() {
                   className="md:text-4xl text-2xl font-bold "
                   color="white"
                 >
-                  GAS GENERATION SYSTEM
+                  {serviceWord.service2Title[language]}
                 </Typography>
                 <Typography
                   placeholder=""
                   className="md:text-xl font-medium mt-5"
                   color="white"
                 >
-                  Analyze our customer needs in N2/O2 uses in advance way and
-                  deliver significant efficiency on customer Life Cycle Cost.
-                  And produce peace of mind for customer
+                  {serviceWord.service2Subtitle[language]}
                 </Typography>
-                <button className="btn btn-outline mt-5">See Products</button>
+                <button className="btn btn-outline mt-5">{ language == 'en' ? 'See Products' : 'Lihat Produk'}</button>
               </div>
             </div>
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -99,19 +95,16 @@ export default function Service() {
                   className="md:text-4xl text-2xl font-bold "
                   color="white"
                 >
-                  ENGINEERING AND INSTALLATION
+                  {serviceWord.service3Title[language]}
                 </Typography>
                 <Typography
                   placeholder=""
                   className="md:text-xl font-medium mt-5"
                   color="white"
                 >
-                  Delivery in superb design and timely control construction
-                  phase. We live in detail for each specification. Project
-                  Management expertise in line with superior quality of
-                  engineering team
+                  {serviceWord.service3Subtitle[language]}
                 </Typography>
-                <button className="btn btn-outline mt-5">See Products</button>
+                <button className="btn btn-outline mt-5">{ language == 'en' ? 'See Products' : 'Lihat Produk'}</button>
               </div>
             </div>
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -124,9 +117,6 @@ export default function Service() {
             </div>
           </div>
         </div>
-        {/* {serviceConstans.map((props, idx) => (
-            <ProjectCard key={idx} {...props} />
-          ))} */}
       </div>
     </section>
   );

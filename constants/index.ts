@@ -12,9 +12,56 @@ import {
 } from "@heroicons/react/24/solid";
 import { ShufflerProps } from "../types";
 
-export const NAV_MENU = [
+export const NAV_MENU_ID = [
   {
     name: "Tentang Kami",
+    icon: BuildingOffice2Icon,
+    href: "/",
+  },
+  // {
+  //   name: "Vision & Mision",
+  //   icon: EyeIcon,
+  //   href: "/#vision-mision",
+  // },
+  // {
+  //   name: "Core Values",
+  //   icon: CircleStackIcon,
+  //   href: "/#core-values",
+  // },
+  {
+    name: "Layanan",
+    icon: ServerStackIcon,
+    href: "/service",
+  },
+  // {
+  //   name: "Authorization",
+  //   icon: LockClosedIcon,
+  //   href: "/#authorization",
+  // },
+  // {
+  //   name: "Way We Do",
+  //   icon: ChatBubbleBottomCenterTextIcon,
+  //   href: "#faqs",
+  // },
+  {
+    name: "Berita / Artikel",
+    icon: NewspaperIcon,
+    href: "/news-article",
+  },
+  {
+    name: "Pelanggan",
+    icon: UsersIcon,
+    href: "/customers",
+  },
+  {
+    name: "Kontak",
+    icon: UserCircleIcon,
+    href: "/contacts",
+  },
+];
+export const NAV_MENU_EN = [
+  {
+    name: "About Us",
     icon: BuildingOffice2Icon,
     href: "/",
   },

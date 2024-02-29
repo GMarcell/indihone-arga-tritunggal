@@ -12,8 +12,13 @@ import { BsBrowserEdge } from "react-icons/bs";
 import Image from "next/image";
 import ContactImage from "@/assets/ContactUs.png";
 import { FaRegBuilding } from "react-icons/fa";
+import langContext from "@/hooks/langContext";
+import { useContext } from "react";
+import { ContactsWord } from "@/bilinggual/bilinggual";
 
 export default function Contacts() {
+  const {language} = useContext(langContext)
+  console.log(ContactsWord.title[language])
   return (
     <section
       className="px-8 py-16 bg-gray-200 min-h-[60vh] flex justify-center items-center"
@@ -26,14 +31,14 @@ export default function Contacts() {
             placeholder=""
             className="!leading-tight text-3xl md:text-5xl text-[#1C3A96] font-bold"
           >
-            Let&apos;s Connect With Us!
+            {ContactsWord.title[language]}
           </Typography>
           <Typography
             variant="h4"
             placeholder=""
             className="!leading-tight text-xl md:text-2xl text-[#1C3A96] font-bold"
           >
-            For Inquiry and Discussion :
+            {ContactsWord.subtitle[language]}
           </Typography>
           <List placeholder="" className="mt-5">
             <ListItem placeholder="" className="flex justify-between">

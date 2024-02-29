@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useContext } from "react";
 import VisionMisionImage from "@/assets/VisionMission.png";
 import Image from "next/image";
 import {
@@ -12,8 +12,12 @@ import {
 } from "@material-tailwind/react";
 import Lines from "@/components/sub/Lines";
 import { FaDotCircle } from "react-icons/fa";
+import langContext from "@/hooks/langContext";
+import { VisionMisionWord } from "@/bilinggual/bilinggual";
+
 
 function VisionMision() {
+  const {language} = useContext(langContext)
   return (
     <div className="bg-[url('/image/VisionMissionDark.png')] bg-cover p-8 ">
       <div
@@ -31,7 +35,7 @@ function VisionMision() {
                       className=" !leading-tight text-3xl md:text-7xl md:font-bold text-center text-white"
                       variant="h2"
                     >
-                      Our Vision
+                      {VisionMisionWord.visiTitle[language]}
                     </Typography>
                     <Lines hideText />
                   </div>
@@ -41,8 +45,7 @@ function VisionMision() {
                     placeholder=""
                     className="lg:text-3xl text-center my-5 text-white"
                   >
-                    To be the catalyst for positive change through technology,
-                    shaping a better future for all.
+                    {VisionMisionWord.visiSubtitle[language]}
                   </Typography>
                 </div>
               </div>
@@ -65,7 +68,7 @@ function VisionMision() {
                     className=" !leading-tight text-3xl md:text-7xl text-center text-white"
                     variant="h2"
                   >
-                    Our Mission
+                    {VisionMisionWord.misiTitle[language]}
                   </Typography>
                   <Lines hideText />
                 </div>
@@ -75,8 +78,7 @@ function VisionMision() {
                 placeholder=""
                 className="lg:text-2xl text-center my-4 text-white"
               >
-                Empowering individuals and businesses with innovative solutions
-                that enhance efficiency, connectivity, and overall well-being.
+                {VisionMisionWord.misiSubtitle[language]}
               </Typography>
               <List placeholder="">
                 <ListItem placeholder="" className="gap-4">
@@ -88,8 +90,7 @@ function VisionMision() {
                     className="lg:text-2xl"
                     color="white"
                   >
-                    Fostering a culture of continuous improvement and
-                    adaptability.
+                    {VisionMisionWord.misiPoint1[language]}
                   </Typography>
                 </ListItem>
                 <ListItem placeholder="" className="gap-4">
@@ -101,8 +102,7 @@ function VisionMision() {
                     className="lg:text-2xl"
                     color="white"
                   >
-                    Building sustainable and mutually beneficial relationships
-                    with our clients, partners, and the community.
+                    {VisionMisionWord.misiPoint2[language]}
                   </Typography>
                 </ListItem>
               </List>

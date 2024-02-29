@@ -1,12 +1,14 @@
 "use client";
 import Image from "next/image";
 import { Typography, IconButton, Button } from "@material-tailwind/react";
-import { NAV_MENU } from "@/constants";
 import { useRouter } from "next/navigation";
 import { IoMdMail, IoLogoWhatsapp } from "react-icons/io";
 import { FaLinkedin, FaFacebook } from "react-icons/fa";
+import { NAV_MENU_EN, NAV_MENU_ID } from "@/constants";
 
-export function Footer() {
+export function Footer({ lang }: { lang: string }) {
+  const NavMenu = lang == 'id' ? NAV_MENU_ID : NAV_MENU_EN
+
   const router = useRouter();
   return (
     <footer className="mt-10 bg-gray-900 px-8 pt-12 bottom-0" id="contacts">
@@ -63,7 +65,7 @@ export function Footer() {
               className="mb-3"
               placeholder=""
             >
-              Contact Us
+              {lang == 'en' ? 'Contact Us' : 'Hubungi Kami'}
             </Typography>
             <div className="flex gap-5 justify-center">
               <button
@@ -115,7 +117,7 @@ export function Footer() {
         </div>
         <div className="mt-4 flex flex-wrap items-center justify-center gap-y-4 gap-x-8 border-t border-gray-700 py-7 md:justify-between">
           <ul className="flex flex-wrap items-center justify-center md:justify-start">
-            {NAV_MENU.map((link, idx) => (
+            {NavMenu.map((link, idx) => (
               <li key={link.name}>
                 <Typography
                   placeholder=""
