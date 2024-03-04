@@ -1,5 +1,6 @@
 "use client";
-import { IoLogoWhatsapp } from "react-icons/io";
+import Image from "next/image";
+import iconWhatsapp from '@/assets/WhatsApp_icon.png'
 
 export function FloatingButton() {
   return (
@@ -7,8 +8,8 @@ export function FloatingButton() {
       href="https://wa.me/6282312073911?text=I'm%20interested%20in%20your%20product%20for%20sale"
       target="_blank"
     >
-      <button className="btn btn-square btn-success !fixed bottom-6 right-6 btn-lg flex gap-1 items-center border border-blue-gray-50">
-        <IoLogoWhatsapp size={42} />
+      <button className="btn btn-square btn-ghost  !fixed bottom-6 right-6 btn-lg flex gap-1 items-center border border-blue-gray-50">
+        <Image src={iconWhatsapp} alt="icon"/>
       </button>
     </a>
   );

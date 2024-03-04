@@ -8,8 +8,8 @@ export const wayWeDoWord: any = {
   id: "Cara Kami Melakukannya",
 };
 export const customerWord: any = {
-  en: "My Awesome Customer",
-  id: "Pelanggan Saya yang Luar Biasa",
+  en: "Our Customer",
+  id: "Pelanggan Kami",
 };
 
 export const Auth: any = {
@@ -72,7 +72,7 @@ export const serviceWord: any = {
   },
   service1Title: {
     en: `COMPRESSED AIR SYSTEM`,
-    id: 'SISTEM UDARA TERKOMPRESI',
+    id: 'SISTEM KOMPRESOR UDARA',
   },
   service1Subtitle: {
     en: `Leverage our advanced problem analytics services to gain valuable insights for having correct compressed air solution, promote efficiency campaign, and drive customer business growth.`,
@@ -80,7 +80,7 @@ export const serviceWord: any = {
   },
   service2Title: {
     en: `GAS GENERATION SYSTEM`,
-    id: 'SISTEM PEMBANGKIT GAS',
+    id: 'SISTEM GENERATOR GAS',
   },
   service2Subtitle: {
     en: `Analyze our customer needs in N2/O2 uses in advance way and deliver significant efficiency on customer Life Cycle Cost. And produce peace of mind for customer`,
@@ -88,7 +88,7 @@ export const serviceWord: any = {
   },
   service3Title: {
     en: `ENGINEERING AND INSTALLATION`,
-    id: 'TEKNIK DAN INSTALASI',
+    id: 'LAYANAN INSTALASI TEKNIS',
   },
   service3Subtitle: {
     en: `Delivery in superb design and timely control construction phase. We live in detail for each specification. Project Management expertise in line with the superior quality of the engineering team`,
