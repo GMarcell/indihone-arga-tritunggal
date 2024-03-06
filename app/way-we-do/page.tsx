@@ -2,9 +2,6 @@
 
 import { Typography } from "@material-tailwind/react";
 import React, { useContext } from "react";
-import Image from "next/image";
-import SMS from '@/assets/SMS.png'
-import QMS from '@/assets/QMS.png'
 import langContext from "@/hooks/langContext";
 import { wayWeDoWord } from "@/bilinggual/bilinggual";
 
@@ -23,8 +20,8 @@ export default function WayWeDo() {
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-10 md:grid-cols-2">
-        <Image src={SMS} alt="SMS" />
-        <Image src={QMS} alt="QMS"/>
+        <img src='/image/way-we-do/SMS.png' alt="SMS" />
+        <img src='/image/way-we-do/QMS.png' alt="QMS"/>
       </div>
     </section>
   );

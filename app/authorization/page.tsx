@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useContext } from "react";
-import certificate from "@/assets/certificate.jpg";
-import Image from "next/image";
 import {
   Typography,
 } from "@material-tailwind/react";
@@ -31,8 +29,8 @@ function Authorization() {
                 {Auth.sentence[language]}
               </Typography>
             </div>
-            <Image
-              src={certificate}
+            <img
+              src='/image/auth/certificate.jpg'
               alt="about-us-image"
               className="w-9/12"
             />

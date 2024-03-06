@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 import { CLIENTSName } from "@/constants";
 import React, { useContext } from "react";
@@ -22,7 +21,7 @@ export default function Customers() {
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-6">
           {CLIENTSName.map((logo, key): any => (
-            <Image
+            <img
               key={key}
               alt={logo}
               width={1500}

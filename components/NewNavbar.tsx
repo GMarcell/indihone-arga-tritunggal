@@ -12,12 +12,9 @@ import {
   MenuHandler,
   MenuList,
 } from "@material-tailwind/react";
-import Image from "next/image";
-import LogoCompany from "@/assets/LogoOAT.png";
-import LogoDistributor from "@/assets/Authorised-distributor-horizontal-logo-English-Original.png";
 import { NAV_MENU_EN, NAV_MENU_ID } from "@/constants";
 import NavItem from "./sub/NavItem";
-import { ChevronDownIcon, Square3Stack3DIcon } from "@heroicons/react/24/solid";
+import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { LangHandlerProps } from "@/types";
 
 export default function NewNavbar({ lang, setLang }: LangHandlerProps) {
@@ -41,8 +38,8 @@ export default function NewNavbar({ lang, setLang }: LangHandlerProps) {
     >
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <div className="flex items-center justify-center gap-2">
-          <Image src={LogoCompany} alt="Logo" width={100} />
-          <Image src={LogoDistributor} alt="Logo" width={120} />
+          <img src='/image/navbar/LogoOAT.png' alt="Logo" width={100} />
+          <img src='/image/navbar/Authorised-distributor-horizontal-logo-English-Original.png' alt="Logo" width={120} />
         </div>
         <div className="hidden lg:block">
           <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 list-none">

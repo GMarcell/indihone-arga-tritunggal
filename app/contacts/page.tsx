@@ -9,8 +9,6 @@ import {
 import { IoCall } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
 import { BsBrowserEdge } from "react-icons/bs";
-import Image from "next/image";
-import ContactImage from "@/assets/ContactUs.png";
 import { FaRegBuilding } from "react-icons/fa";
 import langContext from "@/hooks/langContext";
 import { useContext } from "react";
@@ -128,7 +126,7 @@ export default function Contacts() {
           </List>
         </div>
         <div className="flex justify-center items-center">
-          <Image src={ContactImage} alt="" />
+          <img src='/image/contact/ContactUs.png' alt="" />
         </div>
       </div>
     </section>
