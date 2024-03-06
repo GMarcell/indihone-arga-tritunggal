@@ -119,7 +119,7 @@ export default function Contacts() {
               </ListItemPrefix>
               <div className="w-full">
                 <Typography placeholder="" className="text-xl" color="black">
-                  www.id-oat.com
+                  www.ondihon-arga.com
                 </Typography>
               </div>
             </ListItem>
