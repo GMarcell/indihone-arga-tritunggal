@@ -77,7 +77,7 @@ export function Footer({ lang }: { lang: string }) {
                   )
                 }
               >
-                <IoMdMail size={28} />
+                <IoMdMail size={28} color="white"/>
               </button>
               <button
                 className="btn btn-square btn-ghost"
@@ -88,7 +88,7 @@ export function Footer({ lang }: { lang: string }) {
                   );
                 }}
               >
-                <IoLogoWhatsapp size={28} />
+                <IoLogoWhatsapp size={28} color="white"/>
               </button>
               <button
                 className="btn btn-square btn-ghost"
@@ -99,7 +99,7 @@ export function Footer({ lang }: { lang: string }) {
                   );
                 }}
               >
-                <FaLinkedin size={28} />
+                <FaLinkedin size={28} color="white"/>
               </button>
               <button
                 className="btn btn-square btn-ghost"
@@ -110,7 +110,7 @@ export function Footer({ lang }: { lang: string }) {
                   );
                 }}
               >
-                <FaFacebook size={28} />
+                <FaFacebook size={28} color="white"/>
               </button>
             </div>
           </div>
